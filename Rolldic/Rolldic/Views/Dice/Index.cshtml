@@ -1,0 +1,68 @@
+﻿@model Rolldic.Models.DiceRoll
+
+@{
+    Layout = null;  
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dice Roll Game</title>
+</head>
+<body>
+    <h1>Dice Roll Game</h1>
+    <form action="@Url.Action("Roll")" method="post">
+        <p>
+            <label>Bet on:</label><br />
+            <input type="checkbox" name="BetOptions" value="<7" @(Model.BetOptions != null && Array.Exists(Model.BetOptions, o => o == "<7") ? "checked" : "") /> Less than 7
+            <input type="number" name="BetAmount_<7" value="@(Model.BetAmounts.ContainsKey("<7") ? Model.BetAmounts["<7"].ToString("F2") : "0.00")" step="0.01" min="0" /><br />
+
+            <input type="checkbox" name="BetOptions" value="=7" @(Model.BetOptions != null && Array.Exists(Model.BetOptions, o => o == "=7") ? "checked" : "") /> Equal to 7
+            <input type="number" name="BetAmount_=7" value="@(Model.BetAmounts.ContainsKey("=7") ? Model.BetAmounts["=7"].ToString("F2") : "0.00")" step="0.01" min="0" /><br />
+
+            <input type="checkbox" name="BetOptions" value=">7" @(Model.BetOptions != null && Array.Exists(Model.BetOptions, o => o == ">7") ? "checked" : "") /> Greater than 7
+            <input type="number" name="BetAmount_>7" value="@(Model.BetAmounts.ContainsKey(">7") ? Model.BetAmounts[">7"].ToString("F2") : "0.00")" step="0.01" min="0" /><br />
+        </p>
+        <button type="submit">Roll Dice</button>
+    </form>
+
+    @if (Model.Dice1 > 0 && Model.Dice2 > 0)
+    {
+        <p>You rolled a @Model.Dice1 and a @Model.Dice2.</p>
+        <p>The sum is @Model.Sum.</p>
+        <p>@Model.Result</p>
+
+        if (Model.BetResults != null)
+        {
+            <h2>Bet Results</h2>
+            <ul>
+                @foreach (var bet in Model.BetResults)
+                {
+                    <li>
+                        Bet on @bet.Key: @((bet.Value) ? "Correct" : "Incorrect")
+                    </li>
+                }
+            </ul>
+        }
+
+        if (Model.Payouts != null)
+        {
+            <h2>Payouts</h2>
+            <ul>
+                @foreach (var payout in Model.Payouts)
+                {
+                    <li>
+                        Bet on @payout.Key: @payout.Value.ToString("C") @((payout.Value > 0) ? " (Payout)" : "")
+                    </li>
+                }
+            </ul>
+            <h3>Total Bet Amount: @Model.TotalBetAmount.ToString("C")</h3>
+            <h3>Total Payout: @Model.TotalPayout.ToString("C")</h3>
+        }
+        else
+        {
+            <p>No bets were placed.</p>
+        }
+    }
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\Rolldic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE0772B-4F1F-4352-8462-B18EDE286451}|Rolldic\\Rolldic.csproj|C:\\Users\\DELL\\source\\repos\\Rolldic\\rolldic\\controllers\\dicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE0772B-4F1F-4352-8462-B18EDE286451}|Rolldic\\Rolldic.csproj|solutionrelative:rolldic\\controllers\\dicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE0772B-4F1F-4352-8462-B18EDE286451}|Rolldic\\Rolldic.csproj|C:\\Users\\DELL\\source\\repos\\Rolldic\\rolldic\\models\\diceroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EFE0772B-4F1F-4352-8462-B18EDE286451}|Rolldic\\Rolldic.csproj|solutionrelative:rolldic\\models\\diceroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFE0772B-4F1F-4352-8462-B18EDE286451}|Rolldic\\Rolldic.csproj|c:\\users\\dell\\source\\repos\\rolldic\\rolldic\\views\\dice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EFE0772B-4F1F-4352-8462-B18EDE286451}|Rolldic\\Rolldic.csproj|solutionrelative:rolldic\\views\\dice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\Rolldic\\Rolldic\\Views\\Dice\\Index.cshtml",
+              "RelativeDocumentMoniker": "Rolldic\\Views\\Dice\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\Rolldic\\Rolldic\\Views\\Dice\\Index.cshtml",
+              "RelativeToolTip": "Rolldic\\Views\\Dice\\Index.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T21:02:48.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DiceController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\Rolldic\\Rolldic\\Controllers\\DiceController.cs",
+              "RelativeDocumentMoniker": "Rolldic\\Controllers\\DiceController.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\Rolldic\\Rolldic\\Controllers\\DiceController.cs",
+              "RelativeToolTip": "Rolldic\\Controllers\\DiceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T21:01:57.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DiceRoll.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\Rolldic\\Rolldic\\Models\\DiceRoll.cs",
+              "RelativeDocumentMoniker": "Rolldic\\Models\\DiceRoll.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\Rolldic\\Rolldic\\Models\\DiceRoll.cs",
+              "RelativeToolTip": "Rolldic\\Models\\DiceRoll.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T21:00:59.762Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
